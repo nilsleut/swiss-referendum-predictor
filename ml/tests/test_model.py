@@ -9,7 +9,9 @@ def small_model() -> MLP:
 
 
 def test_forward_shape_single(small_model: MLP) -> None:
-    out = small_model(torch.zeros(1, 10))
+    small_model.eval()
+    with torch.no_grad():
+        out = small_model(torch.zeros(1, 10))
     assert out.shape == (1, 1)
 
 
@@ -42,7 +44,9 @@ def test_zero_dropout() -> None:
 def test_activations() -> None:
     for act in ("relu", "leaky_relu", "selu", "gelu"):
         model = MLP(input_dim=4, hidden_layers=[4], activation=act)
-        out = model(torch.zeros(1, 4))
+        model.eval()
+        with torch.no_grad():
+            out = model(torch.zeros(1, 4))
         assert out.shape == (1, 1), f"Failed for activation={act}"
 
 

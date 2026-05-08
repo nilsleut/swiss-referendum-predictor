@@ -17,9 +17,10 @@ vi.mock("../services/db", () => ({
 
 vi.mock("../services/model", () => ({
   modelService: {
-    isLoaded:   vi.fn().mockReturnValue(true),
-    nFeatures:  584,
-    predict:    vi.fn().mockResolvedValue({
+    isLoaded:    vi.fn().mockReturnValue(true),
+    nFeatures:   584,
+    buildVector: vi.fn().mockReturnValue(new Array(584).fill(0)),
+    predict:     vi.fn().mockResolvedValue({
       predicted_turnout:    42.0,
       confidence_interval:  [30.0, 54.0] as [number, number],
     }),
@@ -66,17 +67,17 @@ describe("POST /predict", () => {
     const res = await app.inject({
       method: "POST",
       url: "/predict",
-      payload: { features: new Array(584).fill(0) },
+      payload: { named_features: {} },
     });
     expect(res.statusCode).toBe(400);
   });
 
-  it("returns 400 when features array has wrong length", async () => {
+  it("returns 400 when named_features is missing", async () => {
     const app = await buildApp();
     const res = await app.inject({
       method: "POST",
       url: "/predict",
-      payload: { title: "Test", features: [0, 1, 2] },
+      payload: { title: "Test" },
     });
     expect(res.statusCode).toBe(400);
   });
@@ -86,7 +87,7 @@ describe("POST /predict", () => {
     const res = await app.inject({
       method: "POST",
       url: "/predict",
-      payload: { title: "Energiegesetz", features: new Array(584).fill(0) },
+      payload: { title: "Energiegesetz", named_features: { level: "national", institution: "Mandatory referendum" } },
     });
     expect(res.statusCode).toBe(201);
     const body = res.json<{ predicted_turnout: number; confidence_interval: number[] }>();
@@ -94,12 +95,12 @@ describe("POST /predict", () => {
     expect(body.confidence_interval).toHaveLength(2);
   });
 
-  it("returns 400 when features is not an array", async () => {
+  it("returns 400 when named_features is not an object", async () => {
     const app = await buildApp();
     const res = await app.inject({
       method: "POST",
       url: "/predict",
-      payload: { title: "Test", features: "not-an-array" },
+      payload: { title: "Test", named_features: "not-an-object" },
     });
     expect(res.statusCode).toBe(400);
   });

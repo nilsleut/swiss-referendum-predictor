@@ -1,8 +1,34 @@
+export interface NamedFeatureInput {
+  level?: "national" | "cantonal";
+  canton?: string;
+  theme1?: string;
+  theme2?: string;
+  theme3?: string;
+  institution?: string;
+  vote_trigger?: string;
+  vote_result_status?: string;
+  official_status?: string;
+  legal_act_type?: string;
+  vote_trigger_actor?: string;
+  vote_object?: string;
+  author?: string;
+  counter_proposal?: string;
+  action?: string;
+  legal_norm_hierarchy?: string;
+  degree_of_revision?: string;
+  decision_quorum?: string;
+  referendum_text_options?: string;
+  institutional_precondition?: string;
+  institutional_precondition_decision?: string;
+  special_topics?: string;
+  excluded_topics?: string;
+}
+
 export interface PredictRequest {
   title: string;
   topic_category?: string;
-  date?: string;           // ISO date string, e.g. "2024-03-15"
-  features: number[];      // 584 raw (unscaled) feature values
+  date?: string;
+  named_features: NamedFeatureInput;
 }
 
 export interface PredictResponse {

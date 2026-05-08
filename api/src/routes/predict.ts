@@ -6,15 +6,14 @@ import type { PredictRequest, PredictResponse } from "../types/referendum";
 
 const bodySchema = {
   type: "object",
-  required: ["title", "features"],
+  required: ["title", "named_features"],
   properties: {
     title:          { type: "string", minLength: 1 },
     topic_category: { type: "string" },
     date:           { type: "string", format: "date" },
-    features: {
-      type: "array",
-      items: { type: "number" },
-      minItems: 1,
+    named_features: {
+      type: "object",
+      additionalProperties: { type: "string" },
     },
   },
 } as const;
@@ -24,21 +23,13 @@ export async function predictRoutes(app: FastifyInstance): Promise<void> {
     "/predict",
     { schema: { body: bodySchema } },
     async (req, reply) => {
-      const { title, topic_category, date, features } = req.body;
+      const { title, topic_category, date, named_features } = req.body;
 
-      const n = modelService.nFeatures;
-      if (features.length !== n) {
-        return reply.status(400).send({
-          // Fastify will serialise this as an error body
-          message: `features array must have exactly ${n} elements, got ${features.length}`,
-        } as unknown as PredictResponse);
-      }
+      const features = modelService.buildVector(named_features);
 
-      // Inference
       const { predicted_turnout, confidence_interval } =
         await modelService.predict(features);
 
-      // Persist
       const referendum_id = await createReferendum({ title, topic_category, date });
       const { id: prediction_id, prediction_time } = await storePrediction({
         referendum_id,

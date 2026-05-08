@@ -26,4 +26,7 @@ export const config = {
   get modelInfoPath() {
     return path.join(this.onnxModelDir, "model_info.json");
   },
+  get featureGroupsPath() {
+    return path.join(this.onnxModelDir, "feature_groups.json");
+  },
 };

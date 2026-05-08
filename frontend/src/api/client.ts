@@ -16,11 +16,37 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 // Types (mirror api/src/types/referendum.ts)
 // ---------------------------------------------------------------------------
 
+export interface NamedFeatureInput {
+  level?: "national" | "cantonal";
+  canton?: string;
+  theme1?: string;
+  theme2?: string;
+  theme3?: string;
+  institution?: string;
+  vote_trigger?: string;
+  vote_result_status?: string;
+  official_status?: string;
+  legal_act_type?: string;
+  vote_trigger_actor?: string;
+  vote_object?: string;
+  author?: string;
+  counter_proposal?: string;
+  action?: string;
+  legal_norm_hierarchy?: string;
+  degree_of_revision?: string;
+  decision_quorum?: string;
+  referendum_text_options?: string;
+  institutional_precondition?: string;
+  institutional_precondition_decision?: string;
+  special_topics?: string;
+  excluded_topics?: string;
+}
+
 export interface PredictRequest {
   title: string;
   topic_category?: string;
   date?: string;
-  features: number[];
+  named_features: NamedFeatureInput;
 }
 
 export interface PredictResponse {
@@ -81,14 +107,109 @@ export const api = {
 };
 
 // ---------------------------------------------------------------------------
-// Sample feature vector (all zeros → model predicts ~mean turnout)
+// Feature group options (extracted from training data column names)
 // ---------------------------------------------------------------------------
-export const N_FEATURES = 584;
 
-export function sampleFeatures(): number[] {
-  const v = new Array<number>(N_FEATURES).fill(0);
-  v[1] = 1;      // f1 is almost always 1 in the training data
-  v[2] = 6190;   // f2: mean integer value
-  v[3] = 228;    // f3: mean integer value
-  return v;
-}
+export const CANTONS = [
+  "Aargau", "Appenzell Ausserrhoden", "Basel Landschaft", "Basel Stadt",
+  "Basel-Landschaft", "Bern", "Berne", "Fribourg", "Geneva", "Graubünden",
+  "Jura", "Lucerne", "Luzern", "Neuchâtel", "Neuenburg", "Nidwalden",
+  "Obwalden", "Schaffhausen", "Schwyz", "Solothurn", "St. Gallen", "Thurgau",
+  "Ticino", "Uri", "Valais", "Vaud", "Zug", "Zurich",
+];
+
+export const THEMES = [
+  "EEA", "EU", "Swiss abroad", "UN", "abolition of the armed forces",
+  "addictive substances", "agricultural policy", "agriculture",
+  "air quality control", "air transport", "alternative energy",
+  "animal protection", "animal testing", "armed forces in general", "arms",
+  "banks, stock exchange, insurance", "bilateral treaties",
+  "budget cuts and remediation measures",
+  "building of residential housing, property ownership",
+  "children and young people", "citizens' initiatives", "citizens' rights",
+  "citizenship", "civil protection", "competition policy",
+  "conscientious objection, civilian service", "constitution",
+  "consumer protection", "courts", "criminal law", "crop production",
+  "cultural policy", "culture, religion and media", "customs",
+  "data protection", "development cooperation", "direct taxation",
+  "disability insurance", "division of tasks", "economic policy", "economy",
+  "education and research", "education policy", "electoral system",
+  "employment", "employment conditions", "employment policy", "energy",
+  "energy policy", "environment", "environment and living space",
+  "environmental policy", "family policy", "federalism", "finance",
+  "financial system", "fishing, hunting and pets", "foreign trade policy",
+  "forestry", "fundamental rights", "genetic engineering", "goods traffic",
+  "government, administration", "health", "health and accident insurance",
+  "health policy", "heavy traffic", "homosexuals", "hospitality", "housing",
+  "hydro-electric power", "immigration policy", "independence",
+  "indirect taxation", "industrial relations", "institutions",
+  "intergovernmental relations", "international organisations", "land law",
+  "language policy", "legal system", "legislative procedure", "livestock",
+  "lottery and gambling", "maternity insurance", "media and communication",
+  "medical research and technology", "medicines", "military facilities",
+  "military organisation", "military training", "monetary policy",
+  "national bank", "national economic supply", "national identity",
+  "neutrality", "noise protection", "nuclear energy", "oil and gas",
+  "parliament", "passenger traffic", "pension insurance",
+  "persons with disabilities", "police", "political system",
+  "position on foreign policy", "post", "pricing policy", "private law",
+  "procedure for constitutional reform", "professional and vocational education",
+  "protection of nature and cultural heritage", "public expenditure",
+  "public finance", "public security", "radio, television and electronic media",
+  "rail transport", "referendum", "refugees", "religion, churches",
+  "reproductive medicine", "research", "road construction", "road transport",
+  "schools", "security policy", "senior citizens", "shipping",
+  "short-term economic policy", "social groups", "social policy",
+  "social security", "soil", "soil protection", "spatial planning", "sport",
+  "state organisation", "state security", "status of women",
+  "structural policy", "tax policy", "tax system", "taxation",
+  "telecommunications", "tenancy issues", "territorial questions", "tourism",
+  "tourism and leisure", "transit traffic", "transport and infrastructure",
+  "transport policy", "unemployment insurance", "universities", "urban transport",
+  "voting rights", "waste", "water pollution control", "welfare", "working hours",
+];
+
+export const INSTITUTIONS = [
+  "Citizens' initiative", "Counter proposal", "Governmental referendum",
+  "Mandatory referendum", "Not provided", "Optional referendum",
+];
+
+export const VOTE_TRIGGERS = ["Automatic", "Bottom up", "Top down"];
+
+export const VOTE_TRIGGER_ACTORS = [
+  "Citizens", "Constitution", "Government", "Parliament", "Territorial unit",
+];
+
+export const VOTE_OBJECTS = [
+  "Legal text (allg. anregung)", "Legal text (ausformulierter vorschlag)",
+  "Principle", "Question",
+];
+
+export const AUTHORS = [
+  "Citizens", "Government", "Institution", "Monarch", "Parliament", "Territorial unit",
+];
+
+export const ACTIONS = [
+  "Abrogate", "Abrogate, Introduce", "Abrogate, Introduce, Revise",
+  "Introduce", "Introduce, Revise", "Revise",
+];
+
+export const LEGAL_NORM_HIERARCHIES = [
+  "Constitution", "Constitution / law / ordinance", "Constitution / law / other",
+  "International treaty", "Law", "Ordinance", "Treaty", "Undefined",
+];
+
+export const DEGREES_OF_REVISION = ["Both", "Partial", "Total"];
+
+export const DECISION_QUORUMS = ["Double majority", "Simple majority"];
+
+export const LEGAL_ACT_TYPES = ["Normal", "Urgent"];
+
+export const SPECIAL_TOPICS = [
+  "Financial act", "Financial act (expenses)",
+  "Financial act (expenses), Treaties", "Financial act (obligations)",
+  "Financial act (taxes)", "Financial act, Financial act (expenses)",
+  "Financial act, Infrastructural act", "Infrastructural act",
+  "Territorial questions", "Territorial questions, Treaties",
+  "Total revision of the constitution", "Treaties",
+];

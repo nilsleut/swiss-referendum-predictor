@@ -1,0 +1,68 @@
+services:
+
+  # ── PostgreSQL ─────────────────────────────────────────────────────────
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB:       referendum_db
+      POSTGRES_USER:     postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d referendum_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # ── Fastify API ────────────────────────────────────────────────────────
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      DATABASE_URL:    postgresql://postgres:${POSTGRES_PASSWORD}@db:5432/referendum_db
+      ONNX_MODEL_DIR:  /models
+      MODEL_VERSION:   ${MODEL_VERSION:-v1.0.0}
+      PORT:            "3000"
+      LOG_PRETTY:      "false"
+    volumes:
+      # Mount the exported ONNX artefacts read-only into the container
+      - ./ml/models/onnx:/models:ro
+    ports:
+      - "3000:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  # ── React Frontend (nginx) ─────────────────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+
+  # ── ML Training (opt-in via --profile training) ────────────────────────
+  ml:
+    build:
+      context: ./ml
+      dockerfile: Dockerfile
+    profiles:
+      - training
+    volumes:
+      - ./ml/data:/app/data:ro
+      - ./ml/models:/app/models
+      - ./ml/experiments:/app/experiments:ro
+    environment:
+      PYTHONPATH: /app
+      WANDB_API_KEY: ${WANDB_API_KEY:-}
+
+volumes:
+  postgres_data:

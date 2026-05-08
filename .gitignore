@@ -1,0 +1,34 @@
+# Data & models (must be placed manually)
+ml/data/
+ml/models/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.env
+
+# Node
+node_modules/
+dist/
+*.local
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Wandb
+wandb/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

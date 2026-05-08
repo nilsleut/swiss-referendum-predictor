@@ -1,0 +1,40 @@
+# Default hyperparameter configuration for Swiss referendum turnout MLP.
+# Edit this file or copy it to run experiments; pass with --config.
+#
+# Dataset layout:
+#   grosserDatensatzEingabe.csv — 6083 rows × 584 features, semicolon-delimited, no header
+#   grosserDatensatzAusgabe.csv — 6083 rows × 1 turnout %, one value per line, no header
+
+data:
+  features_path: "data/grosserDatensatzEingabe.csv"
+  targets_path:  "data/grosserDatensatzAusgabe.csv"
+  features_sep:  ";"
+  val_size:  0.15
+  test_size: 0.15
+  random_seed: 42
+
+model:
+  # Input dim is inferred automatically (584 features)
+  hidden_layers: [512, 256, 128, 64]
+  dropout: 0.3
+  batch_norm: true
+  activation: "relu"   # relu | leaky_relu | selu | gelu
+
+training:
+  batch_size: 64
+  epochs: 200
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  early_stopping_patience: 10
+  lr_scheduler_patience: 5
+  lr_scheduler_factor: 0.5
+
+logging:
+  enabled: true          # set false to skip wandb
+  project: "swiss-referendum-predictor"
+  run_name: "baseline"
+  log_every_n_epochs: 1
+
+paths:
+  checkpoint_dir: "models/checkpoints"
+  onnx_dir:       "models/onnx"

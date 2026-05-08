@@ -1,0 +1,9 @@
+data/
+models/
+__pycache__/
+*.pyc
+.venv/
+venv/
+wandb/
+notebooks/
+*.egg-info/

@@ -1,0 +1,2941 @@
+{
+  "Canton": [
+    {
+      "index": 5,
+      "colName": "Canton_0",
+      "label": "0"
+    },
+    {
+      "index": 6,
+      "colName": "Canton_Aargau",
+      "label": "Aargau"
+    },
+    {
+      "index": 7,
+      "colName": "Canton_Appenzell Ausserrhoden",
+      "label": "Appenzell Ausserrhoden"
+    },
+    {
+      "index": 8,
+      "colName": "Canton_Basel Landschaft",
+      "label": "Basel Landschaft"
+    },
+    {
+      "index": 9,
+      "colName": "Canton_Basel Stadt",
+      "label": "Basel Stadt"
+    },
+    {
+      "index": 10,
+      "colName": "Canton_Basel-Landschaft",
+      "label": "Basel-Landschaft"
+    },
+    {
+      "index": 11,
+      "colName": "Canton_Bern",
+      "label": "Bern"
+    },
+    {
+      "index": 12,
+      "colName": "Canton_Berne",
+      "label": "Berne"
+    },
+    {
+      "index": 13,
+      "colName": "Canton_Fribourg",
+      "label": "Fribourg"
+    },
+    {
+      "index": 14,
+      "colName": "Canton_Geneva",
+      "label": "Geneva"
+    },
+    {
+      "index": 15,
+      "colName": "Canton_GraubÃ¼nden",
+      "label": "GraubÃ¼nden"
+    },
+    {
+      "index": 16,
+      "colName": "Canton_Jura",
+      "label": "Jura"
+    },
+    {
+      "index": 17,
+      "colName": "Canton_Lucerne",
+      "label": "Lucerne"
+    },
+    {
+      "index": 18,
+      "colName": "Canton_Luzern",
+      "label": "Luzern"
+    },
+    {
+      "index": 19,
+      "colName": "Canton_NeuchÃ¢tel",
+      "label": "NeuchÃ¢tel"
+    },
+    {
+      "index": 20,
+      "colName": "Canton_Neuenburg",
+      "label": "Neuenburg"
+    },
+    {
+      "index": 21,
+      "colName": "Canton_Nidwalden",
+      "label": "Nidwalden"
+    },
+    {
+      "index": 22,
+      "colName": "Canton_Obwalden",
+      "label": "Obwalden"
+    },
+    {
+      "index": 23,
+      "colName": "Canton_Schaffhausen",
+      "label": "Schaffhausen"
+    },
+    {
+      "index": 24,
+      "colName": "Canton_Schwyz",
+      "label": "Schwyz"
+    },
+    {
+      "index": 25,
+      "colName": "Canton_Solothurn",
+      "label": "Solothurn"
+    },
+    {
+      "index": 26,
+      "colName": "Canton_St. Gallen",
+      "label": "St. Gallen"
+    },
+    {
+      "index": 27,
+      "colName": "Canton_Thurgau",
+      "label": "Thurgau"
+    },
+    {
+      "index": 28,
+      "colName": "Canton_Ticino",
+      "label": "Ticino"
+    },
+    {
+      "index": 29,
+      "colName": "Canton_Uri",
+      "label": "Uri"
+    },
+    {
+      "index": 30,
+      "colName": "Canton_Valais",
+      "label": "Valais"
+    },
+    {
+      "index": 31,
+      "colName": "Canton_Vaud",
+      "label": "Vaud"
+    },
+    {
+      "index": 32,
+      "colName": "Canton_Zug",
+      "label": "Zug"
+    },
+    {
+      "index": 33,
+      "colName": "Canton_Zurich",
+      "label": "Zurich"
+    }
+  ],
+  "Theme 1": [
+    {
+      "index": 34,
+      "colName": "Theme 1_0",
+      "label": "0"
+    },
+    {
+      "index": 35,
+      "colName": "Theme 1_EEA",
+      "label": "EEA"
+    },
+    {
+      "index": 36,
+      "colName": "Theme 1_EU",
+      "label": "EU"
+    },
+    {
+      "index": 37,
+      "colName": "Theme 1_Swiss abroad",
+      "label": "Swiss abroad"
+    },
+    {
+      "index": 38,
+      "colName": "Theme 1_UN",
+      "label": "UN"
+    },
+    {
+      "index": 39,
+      "colName": "Theme 1_abolition of the armed forces",
+      "label": "abolition of the armed forces"
+    },
+    {
+      "index": 40,
+      "colName": "Theme 1_addictive substances",
+      "label": "addictive substances"
+    },
+    {
+      "index": 41,
+      "colName": "Theme 1_agricultural policy",
+      "label": "agricultural policy"
+    },
+    {
+      "index": 42,
+      "colName": "Theme 1_agriculture",
+      "label": "agriculture"
+    },
+    {
+      "index": 43,
+      "colName": "Theme 1_air quality control",
+      "label": "air quality control"
+    },
+    {
+      "index": 44,
+      "colName": "Theme 1_air transport",
+      "label": "air transport"
+    },
+    {
+      "index": 45,
+      "colName": "Theme 1_alternative energy",
+      "label": "alternative energy"
+    },
+    {
+      "index": 46,
+      "colName": "Theme 1_animal protection",
+      "label": "animal protection"
+    },
+    {
+      "index": 47,
+      "colName": "Theme 1_animal testing",
+      "label": "animal testing"
+    },
+    {
+      "index": 48,
+      "colName": "Theme 1_armed forces in general",
+      "label": "armed forces in general"
+    },
+    {
+      "index": 49,
+      "colName": "Theme 1_arms",
+      "label": "arms"
+    },
+    {
+      "index": 50,
+      "colName": "Theme 1_banks, stock exchange, insurance",
+      "label": "banks, stock exchange, insurance"
+    },
+    {
+      "index": 51,
+      "colName": "Theme 1_bilateral treaties",
+      "label": "bilateral treaties"
+    },
+    {
+      "index": 52,
+      "colName": "Theme 1_budget cuts and remediation measures",
+      "label": "budget cuts and remediation measures"
+    },
+    {
+      "index": 53,
+      "colName": "Theme 1_building of residential housing, property ownership",
+      "label": "building of residential housing, property ownership"
+    },
+    {
+      "index": 54,
+      "colName": "Theme 1_children and young people",
+      "label": "children and young people"
+    },
+    {
+      "index": 55,
+      "colName": "Theme 1_citizens' initiatives",
+      "label": "citizens' initiatives"
+    },
+    {
+      "index": 56,
+      "colName": "Theme 1_citizens' rights",
+      "label": "citizens' rights"
+    },
+    {
+      "index": 57,
+      "colName": "Theme 1_citizenship",
+      "label": "citizenship"
+    },
+    {
+      "index": 58,
+      "colName": "Theme 1_civil protection",
+      "label": "civil protection"
+    },
+    {
+      "index": 59,
+      "colName": "Theme 1_competition policy",
+      "label": "competition policy"
+    },
+    {
+      "index": 60,
+      "colName": "Theme 1_conscientious objection, civilian service",
+      "label": "conscientious objection, civilian service"
+    },
+    {
+      "index": 61,
+      "colName": "Theme 1_constitution",
+      "label": "constitution"
+    },
+    {
+      "index": 62,
+      "colName": "Theme 1_consumer protection",
+      "label": "consumer protection"
+    },
+    {
+      "index": 63,
+      "colName": "Theme 1_courts",
+      "label": "courts"
+    },
+    {
+      "index": 64,
+      "colName": "Theme 1_criminal law",
+      "label": "criminal law"
+    },
+    {
+      "index": 65,
+      "colName": "Theme 1_crop production",
+      "label": "crop production"
+    },
+    {
+      "index": 66,
+      "colName": "Theme 1_cultural policy",
+      "label": "cultural policy"
+    },
+    {
+      "index": 67,
+      "colName": "Theme 1_culture, religion and media",
+      "label": "culture, religion and media"
+    },
+    {
+      "index": 68,
+      "colName": "Theme 1_customs",
+      "label": "customs"
+    },
+    {
+      "index": 69,
+      "colName": "Theme 1_data protection",
+      "label": "data protection"
+    },
+    {
+      "index": 70,
+      "colName": "Theme 1_development cooperation",
+      "label": "development cooperation"
+    },
+    {
+      "index": 71,
+      "colName": "Theme 1_direct taxation",
+      "label": "direct taxation"
+    },
+    {
+      "index": 72,
+      "colName": "Theme 1_disability insurance",
+      "label": "disability insurance"
+    },
+    {
+      "index": 73,
+      "colName": "Theme 1_division of tasks",
+      "label": "division of tasks"
+    },
+    {
+      "index": 74,
+      "colName": "Theme 1_economic policy",
+      "label": "economic policy"
+    },
+    {
+      "index": 75,
+      "colName": "Theme 1_economy",
+      "label": "economy"
+    },
+    {
+      "index": 76,
+      "colName": "Theme 1_education and research",
+      "label": "education and research"
+    },
+    {
+      "index": 77,
+      "colName": "Theme 1_education policy",
+      "label": "education policy"
+    },
+    {
+      "index": 78,
+      "colName": "Theme 1_electoral system",
+      "label": "electoral system"
+    },
+    {
+      "index": 79,
+      "colName": "Theme 1_employment",
+      "label": "employment"
+    },
+    {
+      "index": 80,
+      "colName": "Theme 1_employment conditions",
+      "label": "employment conditions"
+    },
+    {
+      "index": 81,
+      "colName": "Theme 1_employment policy",
+      "label": "employment policy"
+    },
+    {
+      "index": 82,
+      "colName": "Theme 1_energy",
+      "label": "energy"
+    },
+    {
+      "index": 83,
+      "colName": "Theme 1_energy policy",
+      "label": "energy policy"
+    },
+    {
+      "index": 84,
+      "colName": "Theme 1_environment",
+      "label": "environment"
+    },
+    {
+      "index": 85,
+      "colName": "Theme 1_environment and living space",
+      "label": "environment and living space"
+    },
+    {
+      "index": 86,
+      "colName": "Theme 1_environmental policy",
+      "label": "environmental policy"
+    },
+    {
+      "index": 87,
+      "colName": "Theme 1_family policy",
+      "label": "family policy"
+    },
+    {
+      "index": 88,
+      "colName": "Theme 1_federalism",
+      "label": "federalism"
+    },
+    {
+      "index": 89,
+      "colName": "Theme 1_finance",
+      "label": "finance"
+    },
+    {
+      "index": 90,
+      "colName": "Theme 1_financial system",
+      "label": "financial system"
+    },
+    {
+      "index": 91,
+      "colName": "Theme 1_fishing, hunting and pets",
+      "label": "fishing, hunting and pets"
+    },
+    {
+      "index": 92,
+      "colName": "Theme 1_foreign trade policy",
+      "label": "foreign trade policy"
+    },
+    {
+      "index": 93,
+      "colName": "Theme 1_forestry",
+      "label": "forestry"
+    },
+    {
+      "index": 94,
+      "colName": "Theme 1_fundamental rights",
+      "label": "fundamental rights"
+    },
+    {
+      "index": 95,
+      "colName": "Theme 1_genetic engineering",
+      "label": "genetic engineering"
+    },
+    {
+      "index": 96,
+      "colName": "Theme 1_goods traffic",
+      "label": "goods traffic"
+    },
+    {
+      "index": 97,
+      "colName": "Theme 1_government, administration",
+      "label": "government, administration"
+    },
+    {
+      "index": 98,
+      "colName": "Theme 1_health",
+      "label": "health"
+    },
+    {
+      "index": 99,
+      "colName": "Theme 1_health and accident insurance",
+      "label": "health and accident insurance"
+    },
+    {
+      "index": 100,
+      "colName": "Theme 1_health policy",
+      "label": "health policy"
+    },
+    {
+      "index": 101,
+      "colName": "Theme 1_heavy traffic",
+      "label": "heavy traffic"
+    },
+    {
+      "index": 102,
+      "colName": "Theme 1_homosexuals",
+      "label": "homosexuals"
+    },
+    {
+      "index": 103,
+      "colName": "Theme 1_hospitality",
+      "label": "hospitality"
+    },
+    {
+      "index": 104,
+      "colName": "Theme 1_housing",
+      "label": "housing"
+    },
+    {
+      "index": 105,
+      "colName": "Theme 1_hydro-electric power",
+      "label": "hydro-electric power"
+    },
+    {
+      "index": 106,
+      "colName": "Theme 1_immigration policy",
+      "label": "immigration policy"
+    },
+    {
+      "index": 107,
+      "colName": "Theme 1_independence",
+      "label": "independence"
+    },
+    {
+      "index": 108,
+      "colName": "Theme 1_indirect taxation",
+      "label": "indirect taxation"
+    },
+    {
+      "index": 109,
+      "colName": "Theme 1_industrial relations",
+      "label": "industrial relations"
+    },
+    {
+      "index": 110,
+      "colName": "Theme 1_institutions",
+      "label": "institutions"
+    },
+    {
+      "index": 111,
+      "colName": "Theme 1_intergovernmental relations",
+      "label": "intergovernmental relations"
+    },
+    {
+      "index": 112,
+      "colName": "Theme 1_international organisations",
+      "label": "international organisations"
+    },
+    {
+      "index": 113,
+      "colName": "Theme 1_land law",
+      "label": "land law"
+    },
+    {
+      "index": 114,
+      "colName": "Theme 1_language policy",
+      "label": "language policy"
+    },
+    {
+      "index": 115,
+      "colName": "Theme 1_legal system",
+      "label": "legal system"
+    },
+    {
+      "index": 116,
+      "colName": "Theme 1_legislative procedure",
+      "label": "legislative procedure"
+    },
+    {
+      "index": 117,
+      "colName": "Theme 1_livestock",
+      "label": "livestock"
+    },
+    {
+      "index": 118,
+      "colName": "Theme 1_lottery and gambling",
+      "label": "lottery and gambling"
+    },
+    {
+      "index": 119,
+      "colName": "Theme 1_maternity insurance",
+      "label": "maternity insurance"
+    },
+    {
+      "index": 120,
+      "colName": "Theme 1_media and communication",
+      "label": "media and communication"
+    },
+    {
+      "index": 121,
+      "colName": "Theme 1_medical research and technology",
+      "label": "medical research and technology"
+    },
+    {
+      "index": 122,
+      "colName": "Theme 1_medicines",
+      "label": "medicines"
+    },
+    {
+      "index": 123,
+      "colName": "Theme 1_military facilities",
+      "label": "military facilities"
+    },
+    {
+      "index": 124,
+      "colName": "Theme 1_military organisation",
+      "label": "military organisation"
+    },
+    {
+      "index": 125,
+      "colName": "Theme 1_military training",
+      "label": "military training"
+    },
+    {
+      "index": 126,
+      "colName": "Theme 1_monetary policy",
+      "label": "monetary policy"
+    },
+    {
+      "index": 127,
+      "colName": "Theme 1_national bank",
+      "label": "national bank"
+    },
+    {
+      "index": 128,
+      "colName": "Theme 1_national economic supply",
+      "label": "national economic supply"
+    },
+    {
+      "index": 129,
+      "colName": "Theme 1_national identity",
+      "label": "national identity"
+    },
+    {
+      "index": 130,
+      "colName": "Theme 1_neutrality",
+      "label": "neutrality"
+    },
+    {
+      "index": 131,
+      "colName": "Theme 1_noise protection",
+      "label": "noise protection"
+    },
+    {
+      "index": 132,
+      "colName": "Theme 1_nuclear energy",
+      "label": "nuclear energy"
+    },
+    {
+      "index": 133,
+      "colName": "Theme 1_oil and gas",
+      "label": "oil and gas"
+    },
+    {
+      "index": 134,
+      "colName": "Theme 1_parliament",
+      "label": "parliament"
+    },
+    {
+      "index": 135,
+      "colName": "Theme 1_passenger traffic",
+      "label": "passenger traffic"
+    },
+    {
+      "index": 136,
+      "colName": "Theme 1_pension insurance",
+      "label": "pension insurance"
+    },
+    {
+      "index": 137,
+      "colName": "Theme 1_persons with disabilities",
+      "label": "persons with disabilities"
+    },
+    {
+      "index": 138,
+      "colName": "Theme 1_police",
+      "label": "police"
+    },
+    {
+      "index": 139,
+      "colName": "Theme 1_political system",
+      "label": "political system"
+    },
+    {
+      "index": 140,
+      "colName": "Theme 1_position on foreign policy",
+      "label": "position on foreign policy"
+    },
+    {
+      "index": 141,
+      "colName": "Theme 1_post",
+      "label": "post"
+    },
+    {
+      "index": 142,
+      "colName": "Theme 1_pricing policy",
+      "label": "pricing policy"
+    },
+    {
+      "index": 143,
+      "colName": "Theme 1_private law",
+      "label": "private law"
+    },
+    {
+      "index": 144,
+      "colName": "Theme 1_procedure for constitutional reform",
+      "label": "procedure for constitutional reform"
+    },
+    {
+      "index": 145,
+      "colName": "Theme 1_professional and vocational education",
+      "label": "professional and vocational education"
+    },
+    {
+      "index": 146,
+      "colName": "Theme 1_protection of nature and cultural heritage",
+      "label": "protection of nature and cultural heritage"
+    },
+    {
+      "index": 147,
+      "colName": "Theme 1_public expenditure",
+      "label": "public expenditure"
+    },
+    {
+      "index": 148,
+      "colName": "Theme 1_public finance",
+      "label": "public finance"
+    },
+    {
+      "index": 149,
+      "colName": "Theme 1_public security",
+      "label": "public security"
+    },
+    {
+      "index": 150,
+      "colName": "Theme 1_radio, television and electronic media",
+      "label": "radio, television and electronic media"
+    },
+    {
+      "index": 151,
+      "colName": "Theme 1_rail transport",
+      "label": "rail transport"
+    },
+    {
+      "index": 152,
+      "colName": "Theme 1_referendum",
+      "label": "referendum"
+    },
+    {
+      "index": 153,
+      "colName": "Theme 1_refugees",
+      "label": "refugees"
+    },
+    {
+      "index": 154,
+      "colName": "Theme 1_religion, churches",
+      "label": "religion, churches"
+    },
+    {
+      "index": 155,
+      "colName": "Theme 1_reproductive medicine",
+      "label": "reproductive medicine"
+    },
+    {
+      "index": 156,
+      "colName": "Theme 1_research",
+      "label": "research"
+    },
+    {
+      "index": 157,
+      "colName": "Theme 1_road construction",
+      "label": "road construction"
+    },
+    {
+      "index": 158,
+      "colName": "Theme 1_road transport",
+      "label": "road transport"
+    },
+    {
+      "index": 159,
+      "colName": "Theme 1_schools",
+      "label": "schools"
+    },
+    {
+      "index": 160,
+      "colName": "Theme 1_security policy",
+      "label": "security policy"
+    },
+    {
+      "index": 161,
+      "colName": "Theme 1_senior citizens",
+      "label": "senior citizens"
+    },
+    {
+      "index": 162,
+      "colName": "Theme 1_shipping",
+      "label": "shipping"
+    },
+    {
+      "index": 163,
+      "colName": "Theme 1_short-term economic policy",
+      "label": "short-term economic policy"
+    },
+    {
+      "index": 164,
+      "colName": "Theme 1_social groups",
+      "label": "social groups"
+    },
+    {
+      "index": 165,
+      "colName": "Theme 1_social policy",
+      "label": "social policy"
+    },
+    {
+      "index": 166,
+      "colName": "Theme 1_social security",
+      "label": "social security"
+    },
+    {
+      "index": 167,
+      "colName": "Theme 1_soil",
+      "label": "soil"
+    },
+    {
+      "index": 168,
+      "colName": "Theme 1_soil protection",
+      "label": "soil protection"
+    },
+    {
+      "index": 169,
+      "colName": "Theme 1_spatial planning",
+      "label": "spatial planning"
+    },
+    {
+      "index": 170,
+      "colName": "Theme 1_sport",
+      "label": "sport"
+    },
+    {
+      "index": 171,
+      "colName": "Theme 1_state organisation",
+      "label": "state organisation"
+    },
+    {
+      "index": 172,
+      "colName": "Theme 1_state security",
+      "label": "state security"
+    },
+    {
+      "index": 173,
+      "colName": "Theme 1_status of women",
+      "label": "status of women"
+    },
+    {
+      "index": 174,
+      "colName": "Theme 1_structural policy",
+      "label": "structural policy"
+    },
+    {
+      "index": 175,
+      "colName": "Theme 1_tax policy",
+      "label": "tax policy"
+    },
+    {
+      "index": 176,
+      "colName": "Theme 1_tax system",
+      "label": "tax system"
+    },
+    {
+      "index": 177,
+      "colName": "Theme 1_taxation",
+      "label": "taxation"
+    },
+    {
+      "index": 178,
+      "colName": "Theme 1_telecommunications",
+      "label": "telecommunications"
+    },
+    {
+      "index": 179,
+      "colName": "Theme 1_tenancy issues",
+      "label": "tenancy issues"
+    },
+    {
+      "index": 180,
+      "colName": "Theme 1_territorial questions",
+      "label": "territorial questions"
+    },
+    {
+      "index": 181,
+      "colName": "Theme 1_tourism",
+      "label": "tourism"
+    },
+    {
+      "index": 182,
+      "colName": "Theme 1_tourism and leisure",
+      "label": "tourism and leisure"
+    },
+    {
+      "index": 183,
+      "colName": "Theme 1_transit traffic",
+      "label": "transit traffic"
+    },
+    {
+      "index": 184,
+      "colName": "Theme 1_transport and infrastructure",
+      "label": "transport and infrastructure"
+    },
+    {
+      "index": 185,
+      "colName": "Theme 1_transport policy",
+      "label": "transport policy"
+    },
+    {
+      "index": 186,
+      "colName": "Theme 1_unemployment insurance",
+      "label": "unemployment insurance"
+    },
+    {
+      "index": 187,
+      "colName": "Theme 1_universities",
+      "label": "universities"
+    },
+    {
+      "index": 188,
+      "colName": "Theme 1_urban transport",
+      "label": "urban transport"
+    },
+    {
+      "index": 189,
+      "colName": "Theme 1_voting rights",
+      "label": "voting rights"
+    },
+    {
+      "index": 190,
+      "colName": "Theme 1_waste",
+      "label": "waste"
+    },
+    {
+      "index": 191,
+      "colName": "Theme 1_water pollution control",
+      "label": "water pollution control"
+    },
+    {
+      "index": 192,
+      "colName": "Theme 1_welfare",
+      "label": "welfare"
+    },
+    {
+      "index": 193,
+      "colName": "Theme 1_working hours",
+      "label": "working hours"
+    }
+  ],
+  "Theme 2": [
+    {
+      "index": 194,
+      "colName": "Theme 2_0",
+      "label": "0"
+    },
+    {
+      "index": 195,
+      "colName": "Theme 2_EU",
+      "label": "EU"
+    },
+    {
+      "index": 196,
+      "colName": "Theme 2_Swiss abroad",
+      "label": "Swiss abroad"
+    },
+    {
+      "index": 197,
+      "colName": "Theme 2_abolition of the armed forces",
+      "label": "abolition of the armed forces"
+    },
+    {
+      "index": 198,
+      "colName": "Theme 2_addictive substances",
+      "label": "addictive substances"
+    },
+    {
+      "index": 199,
+      "colName": "Theme 2_agricultural policy",
+      "label": "agricultural policy"
+    },
+    {
+      "index": 200,
+      "colName": "Theme 2_agriculture",
+      "label": "agriculture"
+    },
+    {
+      "index": 201,
+      "colName": "Theme 2_air quality control",
+      "label": "air quality control"
+    },
+    {
+      "index": 202,
+      "colName": "Theme 2_air transport",
+      "label": "air transport"
+    },
+    {
+      "index": 203,
+      "colName": "Theme 2_alternative energy",
+      "label": "alternative energy"
+    },
+    {
+      "index": 204,
+      "colName": "Theme 2_animal protection",
+      "label": "animal protection"
+    },
+    {
+      "index": 205,
+      "colName": "Theme 2_armed forces in general",
+      "label": "armed forces in general"
+    },
+    {
+      "index": 206,
+      "colName": "Theme 2_arms",
+      "label": "arms"
+    },
+    {
+      "index": 207,
+      "colName": "Theme 2_army",
+      "label": "army"
+    },
+    {
+      "index": 208,
+      "colName": "Theme 2_banks, stock exchange, insurance",
+      "label": "banks, stock exchange, insurance"
+    },
+    {
+      "index": 209,
+      "colName": "Theme 2_bilateral treaties",
+      "label": "bilateral treaties"
+    },
+    {
+      "index": 210,
+      "colName": "Theme 2_budget cuts and remediation measures",
+      "label": "budget cuts and remediation measures"
+    },
+    {
+      "index": 211,
+      "colName": "Theme 2_building of residential housing, property ownership",
+      "label": "building of residential housing, property ownership"
+    },
+    {
+      "index": 212,
+      "colName": "Theme 2_children and young people",
+      "label": "children and young people"
+    },
+    {
+      "index": 213,
+      "colName": "Theme 2_citizens' initiatives",
+      "label": "citizens' initiatives"
+    },
+    {
+      "index": 214,
+      "colName": "Theme 2_citizens' rights",
+      "label": "citizens' rights"
+    },
+    {
+      "index": 215,
+      "colName": "Theme 2_citizenship",
+      "label": "citizenship"
+    },
+    {
+      "index": 216,
+      "colName": "Theme 2_civil protection",
+      "label": "civil protection"
+    },
+    {
+      "index": 217,
+      "colName": "Theme 2_competition policy",
+      "label": "competition policy"
+    },
+    {
+      "index": 218,
+      "colName": "Theme 2_constitution",
+      "label": "constitution"
+    },
+    {
+      "index": 219,
+      "colName": "Theme 2_consumer protection",
+      "label": "consumer protection"
+    },
+    {
+      "index": 220,
+      "colName": "Theme 2_courts",
+      "label": "courts"
+    },
+    {
+      "index": 221,
+      "colName": "Theme 2_criminal law",
+      "label": "criminal law"
+    },
+    {
+      "index": 222,
+      "colName": "Theme 2_crop production",
+      "label": "crop production"
+    },
+    {
+      "index": 223,
+      "colName": "Theme 2_cultural policy",
+      "label": "cultural policy"
+    },
+    {
+      "index": 224,
+      "colName": "Theme 2_culture, religion and media",
+      "label": "culture, religion and media"
+    },
+    {
+      "index": 225,
+      "colName": "Theme 2_customs",
+      "label": "customs"
+    },
+    {
+      "index": 226,
+      "colName": "Theme 2_data protection",
+      "label": "data protection"
+    },
+    {
+      "index": 227,
+      "colName": "Theme 2_direct taxation",
+      "label": "direct taxation"
+    },
+    {
+      "index": 228,
+      "colName": "Theme 2_disability insurance",
+      "label": "disability insurance"
+    },
+    {
+      "index": 229,
+      "colName": "Theme 2_division of tasks",
+      "label": "division of tasks"
+    },
+    {
+      "index": 230,
+      "colName": "Theme 2_economic policy",
+      "label": "economic policy"
+    },
+    {
+      "index": 231,
+      "colName": "Theme 2_economy",
+      "label": "economy"
+    },
+    {
+      "index": 232,
+      "colName": "Theme 2_education and research",
+      "label": "education and research"
+    },
+    {
+      "index": 233,
+      "colName": "Theme 2_education policy",
+      "label": "education policy"
+    },
+    {
+      "index": 234,
+      "colName": "Theme 2_electoral system",
+      "label": "electoral system"
+    },
+    {
+      "index": 235,
+      "colName": "Theme 2_employment",
+      "label": "employment"
+    },
+    {
+      "index": 236,
+      "colName": "Theme 2_employment conditions",
+      "label": "employment conditions"
+    },
+    {
+      "index": 237,
+      "colName": "Theme 2_employment policy",
+      "label": "employment policy"
+    },
+    {
+      "index": 238,
+      "colName": "Theme 2_energy",
+      "label": "energy"
+    },
+    {
+      "index": 239,
+      "colName": "Theme 2_energy policy",
+      "label": "energy policy"
+    },
+    {
+      "index": 240,
+      "colName": "Theme 2_environment",
+      "label": "environment"
+    },
+    {
+      "index": 241,
+      "colName": "Theme 2_environment and living space",
+      "label": "environment and living space"
+    },
+    {
+      "index": 242,
+      "colName": "Theme 2_environmental policy",
+      "label": "environmental policy"
+    },
+    {
+      "index": 243,
+      "colName": "Theme 2_family policy",
+      "label": "family policy"
+    },
+    {
+      "index": 244,
+      "colName": "Theme 2_federalism",
+      "label": "federalism"
+    },
+    {
+      "index": 245,
+      "colName": "Theme 2_finance",
+      "label": "finance"
+    },
+    {
+      "index": 246,
+      "colName": "Theme 2_financial system",
+      "label": "financial system"
+    },
+    {
+      "index": 247,
+      "colName": "Theme 2_fishing, hunting and pets",
+      "label": "fishing, hunting and pets"
+    },
+    {
+      "index": 248,
+      "colName": "Theme 2_foreign policy",
+      "label": "foreign policy"
+    },
+    {
+      "index": 249,
+      "colName": "Theme 2_foreign trade policy",
+      "label": "foreign trade policy"
+    },
+    {
+      "index": 250,
+      "colName": "Theme 2_forestry",
+      "label": "forestry"
+    },
+    {
+      "index": 251,
+      "colName": "Theme 2_fundamental rights",
+      "label": "fundamental rights"
+    },
+    {
+      "index": 252,
+      "colName": "Theme 2_genetic engineering",
+      "label": "genetic engineering"
+    },
+    {
+      "index": 253,
+      "colName": "Theme 2_goods traffic",
+      "label": "goods traffic"
+    },
+    {
+      "index": 254,
+      "colName": "Theme 2_government, administration",
+      "label": "government, administration"
+    },
+    {
+      "index": 255,
+      "colName": "Theme 2_health",
+      "label": "health"
+    },
+    {
+      "index": 256,
+      "colName": "Theme 2_health and accident insurance",
+      "label": "health and accident insurance"
+    },
+    {
+      "index": 257,
+      "colName": "Theme 2_health policy",
+      "label": "health policy"
+    },
+    {
+      "index": 258,
+      "colName": "Theme 2_homosexuals",
+      "label": "homosexuals"
+    },
+    {
+      "index": 259,
+      "colName": "Theme 2_hospitality",
+      "label": "hospitality"
+    },
+    {
+      "index": 260,
+      "colName": "Theme 2_housing",
+      "label": "housing"
+    },
+    {
+      "index": 261,
+      "colName": "Theme 2_hydro-electric power",
+      "label": "hydro-electric power"
+    },
+    {
+      "index": 262,
+      "colName": "Theme 2_immigration policy",
+      "label": "immigration policy"
+    },
+    {
+      "index": 263,
+      "colName": "Theme 2_indirect taxation",
+      "label": "indirect taxation"
+    },
+    {
+      "index": 264,
+      "colName": "Theme 2_institutions",
+      "label": "institutions"
+    },
+    {
+      "index": 265,
+      "colName": "Theme 2_intergovernmental relations",
+      "label": "intergovernmental relations"
+    },
+    {
+      "index": 266,
+      "colName": "Theme 2_international deployment",
+      "label": "international deployment"
+    },
+    {
+      "index": 267,
+      "colName": "Theme 2_land law",
+      "label": "land law"
+    },
+    {
+      "index": 268,
+      "colName": "Theme 2_language policy",
+      "label": "language policy"
+    },
+    {
+      "index": 269,
+      "colName": "Theme 2_legal system",
+      "label": "legal system"
+    },
+    {
+      "index": 270,
+      "colName": "Theme 2_legislative procedure",
+      "label": "legislative procedure"
+    },
+    {
+      "index": 271,
+      "colName": "Theme 2_livestock",
+      "label": "livestock"
+    },
+    {
+      "index": 272,
+      "colName": "Theme 2_lottery and gambling",
+      "label": "lottery and gambling"
+    },
+    {
+      "index": 273,
+      "colName": "Theme 2_media and communication",
+      "label": "media and communication"
+    },
+    {
+      "index": 274,
+      "colName": "Theme 2_media policy",
+      "label": "media policy"
+    },
+    {
+      "index": 275,
+      "colName": "Theme 2_medical research and technology",
+      "label": "medical research and technology"
+    },
+    {
+      "index": 276,
+      "colName": "Theme 2_medicines",
+      "label": "medicines"
+    },
+    {
+      "index": 277,
+      "colName": "Theme 2_military facilities",
+      "label": "military facilities"
+    },
+    {
+      "index": 278,
+      "colName": "Theme 2_military training",
+      "label": "military training"
+    },
+    {
+      "index": 279,
+      "colName": "Theme 2_monetary policy",
+      "label": "monetary policy"
+    },
+    {
+      "index": 280,
+      "colName": "Theme 2_national bank",
+      "label": "national bank"
+    },
+    {
+      "index": 281,
+      "colName": "Theme 2_national economic supply",
+      "label": "national economic supply"
+    },
+    {
+      "index": 282,
+      "colName": "Theme 2_national identity",
+      "label": "national identity"
+    },
+    {
+      "index": 283,
+      "colName": "Theme 2_noise protection",
+      "label": "noise protection"
+    },
+    {
+      "index": 284,
+      "colName": "Theme 2_nuclear energy",
+      "label": "nuclear energy"
+    },
+    {
+      "index": 285,
+      "colName": "Theme 2_occupational benefits provision",
+      "label": "occupational benefits provision"
+    },
+    {
+      "index": 286,
+      "colName": "Theme 2_oil and gas",
+      "label": "oil and gas"
+    },
+    {
+      "index": 287,
+      "colName": "Theme 2_parliament",
+      "label": "parliament"
+    },
+    {
+      "index": 288,
+      "colName": "Theme 2_passenger traffic",
+      "label": "passenger traffic"
+    },
+    {
+      "index": 289,
+      "colName": "Theme 2_pension insurance",
+      "label": "pension insurance"
+    },
+    {
+      "index": 290,
+      "colName": "Theme 2_persons with disabilities",
+      "label": "persons with disabilities"
+    },
+    {
+      "index": 291,
+      "colName": "Theme 2_police",
+      "label": "police"
+    },
+    {
+      "index": 292,
+      "colName": "Theme 2_political system",
+      "label": "political system"
+    },
+    {
+      "index": 293,
+      "colName": "Theme 2_position on foreign policy",
+      "label": "position on foreign policy"
+    },
+    {
+      "index": 294,
+      "colName": "Theme 2_post",
+      "label": "post"
+    },
+    {
+      "index": 295,
+      "colName": "Theme 2_press",
+      "label": "press"
+    },
+    {
+      "index": 296,
+      "colName": "Theme 2_pricing policy",
+      "label": "pricing policy"
+    },
+    {
+      "index": 297,
+      "colName": "Theme 2_private law",
+      "label": "private law"
+    },
+    {
+      "index": 298,
+      "colName": "Theme 2_procedure for constitutional reform",
+      "label": "procedure for constitutional reform"
+    },
+    {
+      "index": 299,
+      "colName": "Theme 2_professional and vocational education",
+      "label": "professional and vocational education"
+    },
+    {
+      "index": 300,
+      "colName": "Theme 2_protection of nature and cultural heritage",
+      "label": "protection of nature and cultural heritage"
+    },
+    {
+      "index": 301,
+      "colName": "Theme 2_public expenditure",
+      "label": "public expenditure"
+    },
+    {
+      "index": 302,
+      "colName": "Theme 2_public finance",
+      "label": "public finance"
+    },
+    {
+      "index": 303,
+      "colName": "Theme 2_public security",
+      "label": "public security"
+    },
+    {
+      "index": 304,
+      "colName": "Theme 2_radio, television and electronic media",
+      "label": "radio, television and electronic media"
+    },
+    {
+      "index": 305,
+      "colName": "Theme 2_rail transport",
+      "label": "rail transport"
+    },
+    {
+      "index": 306,
+      "colName": "Theme 2_referendum",
+      "label": "referendum"
+    },
+    {
+      "index": 307,
+      "colName": "Theme 2_refugees",
+      "label": "refugees"
+    },
+    {
+      "index": 308,
+      "colName": "Theme 2_religion, churches",
+      "label": "religion, churches"
+    },
+    {
+      "index": 309,
+      "colName": "Theme 2_reproductive medicine",
+      "label": "reproductive medicine"
+    },
+    {
+      "index": 310,
+      "colName": "Theme 2_research",
+      "label": "research"
+    },
+    {
+      "index": 311,
+      "colName": "Theme 2_road construction",
+      "label": "road construction"
+    },
+    {
+      "index": 312,
+      "colName": "Theme 2_road transport",
+      "label": "road transport"
+    },
+    {
+      "index": 313,
+      "colName": "Theme 2_schools",
+      "label": "schools"
+    },
+    {
+      "index": 314,
+      "colName": "Theme 2_security policy",
+      "label": "security policy"
+    },
+    {
+      "index": 315,
+      "colName": "Theme 2_senior citizens",
+      "label": "senior citizens"
+    },
+    {
+      "index": 316,
+      "colName": "Theme 2_shipping",
+      "label": "shipping"
+    },
+    {
+      "index": 317,
+      "colName": "Theme 2_short-term economic policy",
+      "label": "short-term economic policy"
+    },
+    {
+      "index": 318,
+      "colName": "Theme 2_social groups",
+      "label": "social groups"
+    },
+    {
+      "index": 319,
+      "colName": "Theme 2_social policy",
+      "label": "social policy"
+    },
+    {
+      "index": 320,
+      "colName": "Theme 2_social security",
+      "label": "social security"
+    },
+    {
+      "index": 321,
+      "colName": "Theme 2_soil",
+      "label": "soil"
+    },
+    {
+      "index": 322,
+      "colName": "Theme 2_soil protection",
+      "label": "soil protection"
+    },
+    {
+      "index": 323,
+      "colName": "Theme 2_spatial planning",
+      "label": "spatial planning"
+    },
+    {
+      "index": 324,
+      "colName": "Theme 2_sport",
+      "label": "sport"
+    },
+    {
+      "index": 325,
+      "colName": "Theme 2_state organisation",
+      "label": "state organisation"
+    },
+    {
+      "index": 326,
+      "colName": "Theme 2_state security",
+      "label": "state security"
+    },
+    {
+      "index": 327,
+      "colName": "Theme 2_status of women",
+      "label": "status of women"
+    },
+    {
+      "index": 328,
+      "colName": "Theme 2_structural policy",
+      "label": "structural policy"
+    },
+    {
+      "index": 329,
+      "colName": "Theme 2_tax policy",
+      "label": "tax policy"
+    },
+    {
+      "index": 330,
+      "colName": "Theme 2_tax system",
+      "label": "tax system"
+    },
+    {
+      "index": 331,
+      "colName": "Theme 2_taxation",
+      "label": "taxation"
+    },
+    {
+      "index": 332,
+      "colName": "Theme 2_telecommunications",
+      "label": "telecommunications"
+    },
+    {
+      "index": 333,
+      "colName": "Theme 2_tenancy issues",
+      "label": "tenancy issues"
+    },
+    {
+      "index": 334,
+      "colName": "Theme 2_territorial questions",
+      "label": "territorial questions"
+    },
+    {
+      "index": 335,
+      "colName": "Theme 2_tourism",
+      "label": "tourism"
+    },
+    {
+      "index": 336,
+      "colName": "Theme 2_tourism and leisure",
+      "label": "tourism and leisure"
+    },
+    {
+      "index": 337,
+      "colName": "Theme 2_transit traffic",
+      "label": "transit traffic"
+    },
+    {
+      "index": 338,
+      "colName": "Theme 2_transport and infrastructure",
+      "label": "transport and infrastructure"
+    },
+    {
+      "index": 339,
+      "colName": "Theme 2_transport policy",
+      "label": "transport policy"
+    },
+    {
+      "index": 340,
+      "colName": "Theme 2_unemployment insurance",
+      "label": "unemployment insurance"
+    },
+    {
+      "index": 341,
+      "colName": "Theme 2_universities",
+      "label": "universities"
+    },
+    {
+      "index": 342,
+      "colName": "Theme 2_urban transport",
+      "label": "urban transport"
+    },
+    {
+      "index": 343,
+      "colName": "Theme 2_voting rights",
+      "label": "voting rights"
+    },
+    {
+      "index": 344,
+      "colName": "Theme 2_waste",
+      "label": "waste"
+    },
+    {
+      "index": 345,
+      "colName": "Theme 2_water pollution control",
+      "label": "water pollution control"
+    },
+    {
+      "index": 346,
+      "colName": "Theme 2_welfare",
+      "label": "welfare"
+    },
+    {
+      "index": 347,
+      "colName": "Theme 2_working hours",
+      "label": "working hours"
+    }
+  ],
+  "Theme 3": [
+    {
+      "index": 348,
+      "colName": "Theme 3_0",
+      "label": "0"
+    },
+    {
+      "index": 349,
+      "colName": "Theme 3_abolition of the armed forces",
+      "label": "abolition of the armed forces"
+    },
+    {
+      "index": 350,
+      "colName": "Theme 3_addictive substances",
+      "label": "addictive substances"
+    },
+    {
+      "index": 351,
+      "colName": "Theme 3_agricultural policy",
+      "label": "agricultural policy"
+    },
+    {
+      "index": 352,
+      "colName": "Theme 3_agriculture",
+      "label": "agriculture"
+    },
+    {
+      "index": 353,
+      "colName": "Theme 3_air quality control",
+      "label": "air quality control"
+    },
+    {
+      "index": 354,
+      "colName": "Theme 3_alternative energy",
+      "label": "alternative energy"
+    },
+    {
+      "index": 355,
+      "colName": "Theme 3_animal protection",
+      "label": "animal protection"
+    },
+    {
+      "index": 356,
+      "colName": "Theme 3_armed forces in general",
+      "label": "armed forces in general"
+    },
+    {
+      "index": 357,
+      "colName": "Theme 3_army",
+      "label": "army"
+    },
+    {
+      "index": 358,
+      "colName": "Theme 3_banks, stock exchange, insurance",
+      "label": "banks, stock exchange, insurance"
+    },
+    {
+      "index": 359,
+      "colName": "Theme 3_bilateral treaties",
+      "label": "bilateral treaties"
+    },
+    {
+      "index": 360,
+      "colName": "Theme 3_budget cuts and remediation measures",
+      "label": "budget cuts and remediation measures"
+    },
+    {
+      "index": 361,
+      "colName": "Theme 3_building of residential housing, property ownership",
+      "label": "building of residential housing, property ownership"
+    },
+    {
+      "index": 362,
+      "colName": "Theme 3_children and young people",
+      "label": "children and young people"
+    },
+    {
+      "index": 363,
+      "colName": "Theme 3_citizens' initiatives",
+      "label": "citizens' initiatives"
+    },
+    {
+      "index": 364,
+      "colName": "Theme 3_citizens' rights",
+      "label": "citizens' rights"
+    },
+    {
+      "index": 365,
+      "colName": "Theme 3_citizenship",
+      "label": "citizenship"
+    },
+    {
+      "index": 366,
+      "colName": "Theme 3_civil protection",
+      "label": "civil protection"
+    },
+    {
+      "index": 367,
+      "colName": "Theme 3_compensation for loss of earnings for persons on military service or civil protection duty",
+      "label": "compensation for loss of earnings for persons on military service or civil protection duty"
+    },
+    {
+      "index": 368,
+      "colName": "Theme 3_competition policy",
+      "label": "competition policy"
+    },
+    {
+      "index": 369,
+      "colName": "Theme 3_conscientious objection, civilian service",
+      "label": "conscientious objection, civilian service"
+    },
+    {
+      "index": 370,
+      "colName": "Theme 3_constitution",
+      "label": "constitution"
+    },
+    {
+      "index": 371,
+      "colName": "Theme 3_consumer protection",
+      "label": "consumer protection"
+    },
+    {
+      "index": 372,
+      "colName": "Theme 3_courts",
+      "label": "courts"
+    },
+    {
+      "index": 373,
+      "colName": "Theme 3_criminal law",
+      "label": "criminal law"
+    },
+    {
+      "index": 374,
+      "colName": "Theme 3_crop production",
+      "label": "crop production"
+    },
+    {
+      "index": 375,
+      "colName": "Theme 3_cultural policy",
+      "label": "cultural policy"
+    },
+    {
+      "index": 376,
+      "colName": "Theme 3_culture, religion and media",
+      "label": "culture, religion and media"
+    },
+    {
+      "index": 377,
+      "colName": "Theme 3_development cooperation",
+      "label": "development cooperation"
+    },
+    {
+      "index": 378,
+      "colName": "Theme 3_direct taxation",
+      "label": "direct taxation"
+    },
+    {
+      "index": 379,
+      "colName": "Theme 3_disability insurance",
+      "label": "disability insurance"
+    },
+    {
+      "index": 380,
+      "colName": "Theme 3_division of tasks",
+      "label": "division of tasks"
+    },
+    {
+      "index": 381,
+      "colName": "Theme 3_economic policy",
+      "label": "economic policy"
+    },
+    {
+      "index": 382,
+      "colName": "Theme 3_economy",
+      "label": "economy"
+    },
+    {
+      "index": 383,
+      "colName": "Theme 3_education and research",
+      "label": "education and research"
+    },
+    {
+      "index": 384,
+      "colName": "Theme 3_education policy",
+      "label": "education policy"
+    },
+    {
+      "index": 385,
+      "colName": "Theme 3_electoral system",
+      "label": "electoral system"
+    },
+    {
+      "index": 386,
+      "colName": "Theme 3_employment",
+      "label": "employment"
+    },
+    {
+      "index": 387,
+      "colName": "Theme 3_employment conditions",
+      "label": "employment conditions"
+    },
+    {
+      "index": 388,
+      "colName": "Theme 3_employment policy",
+      "label": "employment policy"
+    },
+    {
+      "index": 389,
+      "colName": "Theme 3_energy",
+      "label": "energy"
+    },
+    {
+      "index": 390,
+      "colName": "Theme 3_energy policy",
+      "label": "energy policy"
+    },
+    {
+      "index": 391,
+      "colName": "Theme 3_environment",
+      "label": "environment"
+    },
+    {
+      "index": 392,
+      "colName": "Theme 3_environment and living space",
+      "label": "environment and living space"
+    },
+    {
+      "index": 393,
+      "colName": "Theme 3_environmental policy",
+      "label": "environmental policy"
+    },
+    {
+      "index": 394,
+      "colName": "Theme 3_family policy",
+      "label": "family policy"
+    },
+    {
+      "index": 395,
+      "colName": "Theme 3_federalism",
+      "label": "federalism"
+    },
+    {
+      "index": 396,
+      "colName": "Theme 3_finance",
+      "label": "finance"
+    },
+    {
+      "index": 397,
+      "colName": "Theme 3_financial system",
+      "label": "financial system"
+    },
+    {
+      "index": 398,
+      "colName": "Theme 3_fishing, hunting and pets",
+      "label": "fishing, hunting and pets"
+    },
+    {
+      "index": 399,
+      "colName": "Theme 3_forestry",
+      "label": "forestry"
+    },
+    {
+      "index": 400,
+      "colName": "Theme 3_freedom of the media",
+      "label": "freedom of the media"
+    },
+    {
+      "index": 401,
+      "colName": "Theme 3_fundamental rights",
+      "label": "fundamental rights"
+    },
+    {
+      "index": 402,
+      "colName": "Theme 3_genetic engineering",
+      "label": "genetic engineering"
+    },
+    {
+      "index": 403,
+      "colName": "Theme 3_government, administration",
+      "label": "government, administration"
+    },
+    {
+      "index": 404,
+      "colName": "Theme 3_health",
+      "label": "health"
+    },
+    {
+      "index": 405,
+      "colName": "Theme 3_health and accident insurance",
+      "label": "health and accident insurance"
+    },
+    {
+      "index": 406,
+      "colName": "Theme 3_health policy",
+      "label": "health policy"
+    },
+    {
+      "index": 407,
+      "colName": "Theme 3_homosexuals",
+      "label": "homosexuals"
+    },
+    {
+      "index": 408,
+      "colName": "Theme 3_hospitality",
+      "label": "hospitality"
+    },
+    {
+      "index": 409,
+      "colName": "Theme 3_housing",
+      "label": "housing"
+    },
+    {
+      "index": 410,
+      "colName": "Theme 3_hydro-electric power",
+      "label": "hydro-electric power"
+    },
+    {
+      "index": 411,
+      "colName": "Theme 3_immigration policy",
+      "label": "immigration policy"
+    },
+    {
+      "index": 412,
+      "colName": "Theme 3_indirect taxation",
+      "label": "indirect taxation"
+    },
+    {
+      "index": 413,
+      "colName": "Theme 3_industrial relations",
+      "label": "industrial relations"
+    },
+    {
+      "index": 414,
+      "colName": "Theme 3_institutions",
+      "label": "institutions"
+    },
+    {
+      "index": 415,
+      "colName": "Theme 3_intergovernmental relations",
+      "label": "intergovernmental relations"
+    },
+    {
+      "index": 416,
+      "colName": "Theme 3_international law",
+      "label": "international law"
+    },
+    {
+      "index": 417,
+      "colName": "Theme 3_land law",
+      "label": "land law"
+    },
+    {
+      "index": 418,
+      "colName": "Theme 3_language policy",
+      "label": "language policy"
+    },
+    {
+      "index": 419,
+      "colName": "Theme 3_legal system",
+      "label": "legal system"
+    },
+    {
+      "index": 420,
+      "colName": "Theme 3_legislative procedure",
+      "label": "legislative procedure"
+    },
+    {
+      "index": 421,
+      "colName": "Theme 3_livestock",
+      "label": "livestock"
+    },
+    {
+      "index": 422,
+      "colName": "Theme 3_lottery and gambling",
+      "label": "lottery and gambling"
+    },
+    {
+      "index": 423,
+      "colName": "Theme 3_maternity insurance",
+      "label": "maternity insurance"
+    },
+    {
+      "index": 424,
+      "colName": "Theme 3_media and communication",
+      "label": "media and communication"
+    },
+    {
+      "index": 425,
+      "colName": "Theme 3_media policy",
+      "label": "media policy"
+    },
+    {
+      "index": 426,
+      "colName": "Theme 3_medical research and technology",
+      "label": "medical research and technology"
+    },
+    {
+      "index": 427,
+      "colName": "Theme 3_medicines",
+      "label": "medicines"
+    },
+    {
+      "index": 428,
+      "colName": "Theme 3_military facilities",
+      "label": "military facilities"
+    },
+    {
+      "index": 429,
+      "colName": "Theme 3_monetary policy",
+      "label": "monetary policy"
+    },
+    {
+      "index": 430,
+      "colName": "Theme 3_national bank",
+      "label": "national bank"
+    },
+    {
+      "index": 431,
+      "colName": "Theme 3_national economic supply",
+      "label": "national economic supply"
+    },
+    {
+      "index": 432,
+      "colName": "Theme 3_noise protection",
+      "label": "noise protection"
+    },
+    {
+      "index": 433,
+      "colName": "Theme 3_nuclear energy",
+      "label": "nuclear energy"
+    },
+    {
+      "index": 434,
+      "colName": "Theme 3_occupational benefits provision",
+      "label": "occupational benefits provision"
+    },
+    {
+      "index": 435,
+      "colName": "Theme 3_oil and gas",
+      "label": "oil and gas"
+    },
+    {
+      "index": 436,
+      "colName": "Theme 3_parliament",
+      "label": "parliament"
+    },
+    {
+      "index": 437,
+      "colName": "Theme 3_passenger traffic",
+      "label": "passenger traffic"
+    },
+    {
+      "index": 438,
+      "colName": "Theme 3_pension insurance",
+      "label": "pension insurance"
+    },
+    {
+      "index": 439,
+      "colName": "Theme 3_persons with disabilities",
+      "label": "persons with disabilities"
+    },
+    {
+      "index": 440,
+      "colName": "Theme 3_police",
+      "label": "police"
+    },
+    {
+      "index": 441,
+      "colName": "Theme 3_political system",
+      "label": "political system"
+    },
+    {
+      "index": 442,
+      "colName": "Theme 3_position on foreign policy",
+      "label": "position on foreign policy"
+    },
+    {
+      "index": 443,
+      "colName": "Theme 3_press",
+      "label": "press"
+    },
+    {
+      "index": 444,
+      "colName": "Theme 3_private law",
+      "label": "private law"
+    },
+    {
+      "index": 445,
+      "colName": "Theme 3_procedure for constitutional reform",
+      "label": "procedure for constitutional reform"
+    },
+    {
+      "index": 446,
+      "colName": "Theme 3_professional and vocational education",
+      "label": "professional and vocational education"
+    },
+    {
+      "index": 447,
+      "colName": "Theme 3_protection of nature and cultural heritage",
+      "label": "protection of nature and cultural heritage"
+    },
+    {
+      "index": 448,
+      "colName": "Theme 3_public expenditure",
+      "label": "public expenditure"
+    },
+    {
+      "index": 449,
+      "colName": "Theme 3_public finance",
+      "label": "public finance"
+    },
+    {
+      "index": 450,
+      "colName": "Theme 3_public security",
+      "label": "public security"
+    },
+    {
+      "index": 451,
+      "colName": "Theme 3_radio, television and electronic media",
+      "label": "radio, television and electronic media"
+    },
+    {
+      "index": 452,
+      "colName": "Theme 3_rail transport",
+      "label": "rail transport"
+    },
+    {
+      "index": 453,
+      "colName": "Theme 3_referendum",
+      "label": "referendum"
+    },
+    {
+      "index": 454,
+      "colName": "Theme 3_refugees",
+      "label": "refugees"
+    },
+    {
+      "index": 455,
+      "colName": "Theme 3_religion, churches",
+      "label": "religion, churches"
+    },
+    {
+      "index": 456,
+      "colName": "Theme 3_reproductive medicine",
+      "label": "reproductive medicine"
+    },
+    {
+      "index": 457,
+      "colName": "Theme 3_research",
+      "label": "research"
+    },
+    {
+      "index": 458,
+      "colName": "Theme 3_road construction",
+      "label": "road construction"
+    },
+    {
+      "index": 459,
+      "colName": "Theme 3_road transport",
+      "label": "road transport"
+    },
+    {
+      "index": 460,
+      "colName": "Theme 3_schools",
+      "label": "schools"
+    },
+    {
+      "index": 461,
+      "colName": "Theme 3_security policy",
+      "label": "security policy"
+    },
+    {
+      "index": 462,
+      "colName": "Theme 3_senior citizens",
+      "label": "senior citizens"
+    },
+    {
+      "index": 463,
+      "colName": "Theme 3_shipping",
+      "label": "shipping"
+    },
+    {
+      "index": 464,
+      "colName": "Theme 3_short-term economic policy",
+      "label": "short-term economic policy"
+    },
+    {
+      "index": 465,
+      "colName": "Theme 3_social groups",
+      "label": "social groups"
+    },
+    {
+      "index": 466,
+      "colName": "Theme 3_social policy",
+      "label": "social policy"
+    },
+    {
+      "index": 467,
+      "colName": "Theme 3_social security",
+      "label": "social security"
+    },
+    {
+      "index": 468,
+      "colName": "Theme 3_soil",
+      "label": "soil"
+    },
+    {
+      "index": 469,
+      "colName": "Theme 3_soil protection",
+      "label": "soil protection"
+    },
+    {
+      "index": 470,
+      "colName": "Theme 3_spatial planning",
+      "label": "spatial planning"
+    },
+    {
+      "index": 471,
+      "colName": "Theme 3_sport",
+      "label": "sport"
+    },
+    {
+      "index": 472,
+      "colName": "Theme 3_state organisation",
+      "label": "state organisation"
+    },
+    {
+      "index": 473,
+      "colName": "Theme 3_state security",
+      "label": "state security"
+    },
+    {
+      "index": 474,
+      "colName": "Theme 3_status of women",
+      "label": "status of women"
+    },
+    {
+      "index": 475,
+      "colName": "Theme 3_structural policy",
+      "label": "structural policy"
+    },
+    {
+      "index": 476,
+      "colName": "Theme 3_tax policy",
+      "label": "tax policy"
+    },
+    {
+      "index": 477,
+      "colName": "Theme 3_tax system",
+      "label": "tax system"
+    },
+    {
+      "index": 478,
+      "colName": "Theme 3_taxation",
+      "label": "taxation"
+    },
+    {
+      "index": 479,
+      "colName": "Theme 3_telecommunications",
+      "label": "telecommunications"
+    },
+    {
+      "index": 480,
+      "colName": "Theme 3_tenancy issues",
+      "label": "tenancy issues"
+    },
+    {
+      "index": 481,
+      "colName": "Theme 3_territorial questions",
+      "label": "territorial questions"
+    },
+    {
+      "index": 482,
+      "colName": "Theme 3_tourism",
+      "label": "tourism"
+    },
+    {
+      "index": 483,
+      "colName": "Theme 3_tourism and leisure",
+      "label": "tourism and leisure"
+    },
+    {
+      "index": 484,
+      "colName": "Theme 3_transit traffic",
+      "label": "transit traffic"
+    },
+    {
+      "index": 485,
+      "colName": "Theme 3_transport and infrastructure",
+      "label": "transport and infrastructure"
+    },
+    {
+      "index": 486,
+      "colName": "Theme 3_transport policy",
+      "label": "transport policy"
+    },
+    {
+      "index": 487,
+      "colName": "Theme 3_unemployment insurance",
+      "label": "unemployment insurance"
+    },
+    {
+      "index": 488,
+      "colName": "Theme 3_universities",
+      "label": "universities"
+    },
+    {
+      "index": 489,
+      "colName": "Theme 3_urban transport",
+      "label": "urban transport"
+    },
+    {
+      "index": 490,
+      "colName": "Theme 3_voting rights",
+      "label": "voting rights"
+    },
+    {
+      "index": 491,
+      "colName": "Theme 3_waste",
+      "label": "waste"
+    },
+    {
+      "index": 492,
+      "colName": "Theme 3_water pollution control",
+      "label": "water pollution control"
+    },
+    {
+      "index": 493,
+      "colName": "Theme 3_welfare",
+      "label": "welfare"
+    },
+    {
+      "index": 494,
+      "colName": "Theme 3_working hours",
+      "label": "working hours"
+    }
+  ],
+  "Institution": [
+    {
+      "index": 495,
+      "colName": "Institution_Citizens' initiative",
+      "label": "Citizens' initiative"
+    },
+    {
+      "index": 496,
+      "colName": "Institution_Counter proposal",
+      "label": "Counter proposal"
+    },
+    {
+      "index": 497,
+      "colName": "Institution_Governmental referendum",
+      "label": "Governmental referendum"
+    },
+    {
+      "index": 498,
+      "colName": "Institution_Mandatory referendum",
+      "label": "Mandatory referendum"
+    },
+    {
+      "index": 499,
+      "colName": "Institution_Not provided",
+      "label": "Not provided"
+    },
+    {
+      "index": 500,
+      "colName": "Institution_Optional referendum",
+      "label": "Optional referendum"
+    }
+  ],
+  "Vote trigger": [
+    {
+      "index": 501,
+      "colName": "Vote trigger_0",
+      "label": "0"
+    },
+    {
+      "index": 502,
+      "colName": "Vote trigger_Automatic",
+      "label": "Automatic"
+    },
+    {
+      "index": 503,
+      "colName": "Vote trigger_Bottom up",
+      "label": "Bottom up"
+    },
+    {
+      "index": 504,
+      "colName": "Vote trigger_Top down",
+      "label": "Top down"
+    }
+  ],
+  "Vote Result status": [
+    {
+      "index": 505,
+      "colName": "Vote Result status_0",
+      "label": "0"
+    },
+    {
+      "index": 506,
+      "colName": "Vote Result status_Binding",
+      "label": "Binding"
+    }
+  ],
+  "Official status": [
+    {
+      "index": 507,
+      "colName": "Official status_0",
+      "label": "0"
+    },
+    {
+      "index": 508,
+      "colName": "Official status_Official",
+      "label": "Official"
+    }
+  ],
+  "Legal act type": [
+    {
+      "index": 509,
+      "colName": "Legal act type_0",
+      "label": "0"
+    },
+    {
+      "index": 510,
+      "colName": "Legal act type_Normal",
+      "label": "Normal"
+    },
+    {
+      "index": 511,
+      "colName": "Legal act type_Urgent",
+      "label": "Urgent"
+    }
+  ],
+  "Vote trigger actor": [
+    {
+      "index": 512,
+      "colName": "Vote trigger actor_0",
+      "label": "0"
+    },
+    {
+      "index": 513,
+      "colName": "Vote trigger actor_Citizens",
+      "label": "Citizens"
+    },
+    {
+      "index": 514,
+      "colName": "Vote trigger actor_Constitution",
+      "label": "Constitution"
+    },
+    {
+      "index": 515,
+      "colName": "Vote trigger actor_Government",
+      "label": "Government"
+    },
+    {
+      "index": 516,
+      "colName": "Vote trigger actor_Parliament",
+      "label": "Parliament"
+    },
+    {
+      "index": 517,
+      "colName": "Vote trigger actor_Territorial unit",
+      "label": "Territorial unit"
+    }
+  ],
+  "Vote object": [
+    {
+      "index": 518,
+      "colName": "Vote object_0",
+      "label": "0"
+    },
+    {
+      "index": 519,
+      "colName": "Vote object_Legal text (allg. anregung)",
+      "label": "Legal text (allg. anregung)"
+    },
+    {
+      "index": 520,
+      "colName": "Vote object_Legal text (ausformulierter vorschlag)",
+      "label": "Legal text (ausformulierter vorschlag)"
+    },
+    {
+      "index": 521,
+      "colName": "Vote object_Principle",
+      "label": "Principle"
+    },
+    {
+      "index": 522,
+      "colName": "Vote object_Question",
+      "label": "Question"
+    }
+  ],
+  "Author of the vote object": [
+    {
+      "index": 523,
+      "colName": "Author of the vote object_0",
+      "label": "0"
+    },
+    {
+      "index": 524,
+      "colName": "Author of the vote object_Citizens",
+      "label": "Citizens"
+    },
+    {
+      "index": 525,
+      "colName": "Author of the vote object_Government",
+      "label": "Government"
+    },
+    {
+      "index": 526,
+      "colName": "Author of the vote object_Institution",
+      "label": "Institution"
+    },
+    {
+      "index": 527,
+      "colName": "Author of the vote object_Monarch",
+      "label": "Monarch"
+    },
+    {
+      "index": 528,
+      "colName": "Author of the vote object_Parliament",
+      "label": "Parliament"
+    },
+    {
+      "index": 529,
+      "colName": "Author of the vote object_Territorial unit",
+      "label": "Territorial unit"
+    }
+  ],
+  "Counter proposal": [
+    {
+      "index": 530,
+      "colName": "Counter proposal_0",
+      "label": "0"
+    },
+    {
+      "index": 531,
+      "colName": "Counter proposal_No",
+      "label": "No"
+    },
+    {
+      "index": 532,
+      "colName": "Counter proposal_Yes",
+      "label": "Yes"
+    }
+  ],
+  "Action": [
+    {
+      "index": 533,
+      "colName": "Action_0",
+      "label": "0"
+    },
+    {
+      "index": 534,
+      "colName": "Action_Abrogate",
+      "label": "Abrogate"
+    },
+    {
+      "index": 535,
+      "colName": "Action_Abrogate, Introduce",
+      "label": "Abrogate, Introduce"
+    },
+    {
+      "index": 536,
+      "colName": "Action_Abrogate, Introduce, Revise",
+      "label": "Abrogate, Introduce, Revise"
+    },
+    {
+      "index": 537,
+      "colName": "Action_Introduce",
+      "label": "Introduce"
+    },
+    {
+      "index": 538,
+      "colName": "Action_Introduce, Revise",
+      "label": "Introduce, Revise"
+    },
+    {
+      "index": 539,
+      "colName": "Action_Revise",
+      "label": "Revise"
+    }
+  ],
+  "Hierarchy of the legal norm": [
+    {
+      "index": 540,
+      "colName": "Hierarchy of the legal norm_0",
+      "label": "0"
+    },
+    {
+      "index": 541,
+      "colName": "Hierarchy of the legal norm_Constitution",
+      "label": "Constitution"
+    },
+    {
+      "index": 542,
+      "colName": "Hierarchy of the legal norm_Constitution / law / ordinance",
+      "label": "Constitution / law / ordinance"
+    },
+    {
+      "index": 543,
+      "colName": "Hierarchy of the legal norm_Constitution / law / other",
+      "label": "Constitution / law / other"
+    },
+    {
+      "index": 544,
+      "colName": "Hierarchy of the legal norm_International treaty",
+      "label": "International treaty"
+    },
+    {
+      "index": 545,
+      "colName": "Hierarchy of the legal norm_Law",
+      "label": "Law"
+    },
+    {
+      "index": 546,
+      "colName": "Hierarchy of the legal norm_Ordinance",
+      "label": "Ordinance"
+    },
+    {
+      "index": 547,
+      "colName": "Hierarchy of the legal norm_Treaty",
+      "label": "Treaty"
+    },
+    {
+      "index": 548,
+      "colName": "Hierarchy of the legal norm_Undefined",
+      "label": "Undefined"
+    }
+  ],
+  "Degree of revision": [
+    {
+      "index": 549,
+      "colName": "Degree of revision_0",
+      "label": "0"
+    },
+    {
+      "index": 550,
+      "colName": "Degree of revision_Both",
+      "label": "Both"
+    },
+    {
+      "index": 551,
+      "colName": "Degree of revision_Partial",
+      "label": "Partial"
+    },
+    {
+      "index": 552,
+      "colName": "Degree of revision_Total",
+      "label": "Total"
+    }
+  ],
+  "Decision quorum": [
+    {
+      "index": 553,
+      "colName": "Decision quorum_0",
+      "label": "0"
+    },
+    {
+      "index": 554,
+      "colName": "Decision quorum_Double majority",
+      "label": "Double majority"
+    },
+    {
+      "index": 555,
+      "colName": "Decision quorum_Simple majority",
+      "label": "Simple majority"
+    }
+  ],
+  "Referendum text options": [
+    {
+      "index": 556,
+      "colName": "Referendum text options_0",
+      "label": "0"
+    },
+    {
+      "index": 557,
+      "colName": "Referendum text options_Splitting up possible",
+      "label": "Splitting up possible"
+    },
+    {
+      "index": 558,
+      "colName": "Referendum text options_Variants possible",
+      "label": "Variants possible"
+    },
+    {
+      "index": 559,
+      "colName": "Referendum text options_Whole text only",
+      "label": "Whole text only"
+    }
+  ],
+  "Institutional precondition": [
+    {
+      "index": 560,
+      "colName": "Institutional precondition_0",
+      "label": "0"
+    },
+    {
+      "index": 561,
+      "colName": "Institutional precondition_Does not exist",
+      "label": "Does not exist"
+    },
+    {
+      "index": 562,
+      "colName": "Institutional precondition_Exists",
+      "label": "Exists"
+    }
+  ],
+  "Institutional precondition decision": [
+    {
+      "index": 563,
+      "colName": "Institutional precondition decision_0",
+      "label": "0"
+    },
+    {
+      "index": 564,
+      "colName": "Institutional precondition decision_No",
+      "label": "No"
+    },
+    {
+      "index": 565,
+      "colName": "Institutional precondition decision_Yes",
+      "label": "Yes"
+    }
+  ],
+  "Special topics": [
+    {
+      "index": 566,
+      "colName": "Special topics_0",
+      "label": "0"
+    },
+    {
+      "index": 567,
+      "colName": "Special topics_Financial act",
+      "label": "Financial act"
+    },
+    {
+      "index": 568,
+      "colName": "Special topics_Financial act (expenses)",
+      "label": "Financial act (expenses)"
+    },
+    {
+      "index": 569,
+      "colName": "Special topics_Financial act (expenses), Treaties",
+      "label": "Financial act (expenses), Treaties"
+    },
+    {
+      "index": 570,
+      "colName": "Special topics_Financial act (obligations)",
+      "label": "Financial act (obligations)"
+    },
+    {
+      "index": 571,
+      "colName": "Special topics_Financial act (taxes)",
+      "label": "Financial act (taxes)"
+    },
+    {
+      "index": 572,
+      "colName": "Special topics_Financial act, Financial act (expenses)",
+      "label": "Financial act, Financial act (expenses)"
+    },
+    {
+      "index": 573,
+      "colName": "Special topics_Financial act, Infrastructural act",
+      "label": "Financial act, Infrastructural act"
+    },
+    {
+      "index": 574,
+      "colName": "Special topics_Infrastructural act",
+      "label": "Infrastructural act"
+    },
+    {
+      "index": 575,
+      "colName": "Special topics_Territorial questions",
+      "label": "Territorial questions"
+    },
+    {
+      "index": 576,
+      "colName": "Special topics_Territorial questions, Treaties",
+      "label": "Territorial questions, Treaties"
+    },
+    {
+      "index": 577,
+      "colName": "Special topics_Total revision of the constitution",
+      "label": "Total revision of the constitution"
+    },
+    {
+      "index": 578,
+      "colName": "Special topics_Treaties",
+      "label": "Treaties"
+    }
+  ],
+  "Excluded topics": [
+    {
+      "index": 579,
+      "colName": "Excluded topics_0",
+      "label": "0"
+    },
+    {
+      "index": 580,
+      "colName": "Excluded topics_Financial matters, Jus cogens",
+      "label": "Financial matters, Jus cogens"
+    },
+    {
+      "index": 581,
+      "colName": "Excluded topics_Jus cogens",
+      "label": "Jus cogens"
+    },
+    {
+      "index": 582,
+      "colName": "Excluded topics_Jus cogens, Parliamentary competence",
+      "label": "Jus cogens, Parliamentary competence"
+    },
+    {
+      "index": 583,
+      "colName": "Excluded topics_Jus cogens, Personnel appointments",
+      "label": "Jus cogens, Personnel appointments"
+    }
+  ]
+}

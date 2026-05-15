@@ -1,0 +1,14 @@
+{
+  "model_version": "v1.0.0",
+  "n_features": 584,
+  "hidden_layers": [
+    512,
+    256,
+    128,
+    64
+  ],
+  "dropout": 0.3,
+  "batch_norm": true,
+  "activation": "relu",
+  "best_val_loss": 128.147361353824
+}

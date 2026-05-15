@@ -3,6 +3,11 @@
 End-to-end ML system that predicts Swiss referendum voter turnout.
 Built as a production-grade portfolio project covering the full ML lifecycle.
 
+**Live demo:** [swiss-referendum-predictor-1.onrender.com](https://swiss-referendum-predictor-1.onrender.com/)
+> First request may take ~30 s due to Render free-tier cold start.
+
+---
+
 ## Architecture
 
 ```
@@ -18,7 +23,7 @@ Built as a production-grade portfolio project covering the full ML lifecycle.
        │                         │
 ┌──────▼──────┐       ┌──────────▼──────────┐
 │  PostgreSQL │       │  ONNX model          │
-│  :5432      │       │  + scaler_params.json│
+│  Supabase   │       │  + scaler_params.json│
 └─────────────┘       └──────────────────────┘
 ```
 
@@ -29,18 +34,18 @@ Built as a production-grade portfolio project covering the full ML lifecycle.
 | ML training | Python 3.11, PyTorch, wandb |
 | Model serving | ONNX Runtime |
 | API | TypeScript, Fastify 5, pg |
-| Database | PostgreSQL 16 |
+| Database | PostgreSQL 16 (Supabase) |
 | Frontend | React 18, Recharts, Vite |
 | Containers | Docker, Docker Compose |
 | CI/CD | GitHub Actions |
-| Deployment | Railway (free tier) + Supabase, or Google Cloud Run |
+| Deployment | Render.com + Supabase (free tier) |
 
 ## Dataset
 
-Source: `grosserDatensatzEingabe.csv` / `grosserDatensatzAusgabe.csv` from the Maturaarbeit repo.
+Source: `grosserDatensatzEingabe.csv` / `grosserDatensatzAusgabe.csv`.
 Place both files in `ml/data/` (gitignored — must be added manually).
 
-- **Features**: 6 083 referendums × 584 columns (semicolon-delimited, no header)
+- **Features**: 6 083 referendums × 584 columns (one-hot encoded, semicolon-delimited)
 - **Target**: voter turnout percentage (5.3 – 90.0 %)
 
 ---
@@ -108,8 +113,6 @@ Re-train the model inside Docker:
 
 ```bash
 docker compose --profile training run ml
-# Artefacts are written to ml/models/ on the host via the volume mount.
-# After training, re-export ONNX and restart the API:
 docker compose --profile training run ml python -m src.export
 docker compose restart api
 ```
@@ -127,17 +130,37 @@ docker compose restart api
 
 ### POST /predict — request
 
+Provide as many or as few fields as you like — the model fills in anything left unspecified using training-data patterns.
+
 ```json
 {
   "title": "Energiegesetz",
-  "topic_category": "environment",
   "date": "2024-06-09",
-  "features": [0, 1, 6190, 228, 0, 0]
+  "named_features": {
+    "level": "national",
+    "institution": "Mandatory referendum",
+    "theme1": "energy policy",
+    "counter_proposal": "No",
+    "decision_quorum": "Simple majority"
+  }
 }
 ```
 
-`features` must be exactly **584** raw (unscaled) values in the same column order as
-`grosserDatensatzEingabe.csv`.  The API applies the StandardScaler internally.
+All `named_features` fields are optional. Available fields:
+
+| Field | Example values |
+|---|---|
+| `level` | `"national"`, `"cantonal"` |
+| `canton` | `"Zurich"`, `"Bern"`, `"Geneva"`, … |
+| `theme1` / `theme2` / `theme3` | `"energy policy"`, `"immigration policy"`, … (159 options) |
+| `institution` | `"Citizens' initiative"`, `"Mandatory referendum"`, `"Optional referendum"`, … |
+| `counter_proposal` | `"Yes"`, `"No"` |
+| `action` | `"Introduce"`, `"Revise"`, `"Abrogate"`, … |
+| `decision_quorum` | `"Simple majority"`, `"Double majority"` |
+| `legal_norm_hierarchy` | `"Constitution"`, `"Law"`, `"Ordinance"`, … |
+| `degree_of_revision` | `"Partial"`, `"Total"`, `"Both"` |
+| `legal_act_type` | `"Normal"`, `"Urgent"` |
+| `vote_trigger` | `"Bottom up"`, `"Top down"`, `"Automatic"` |
 
 ### POST /predict — response
 
@@ -154,149 +177,65 @@ docker compose restart api
 
 ---
 
-## Deployment — Railway + Supabase (free tier)
-
-This is the simplest zero-cost path. Railway gives you two free services (API + Frontend)
-and Supabase provides a free managed PostgreSQL instance.
+## Deployment — Render + Supabase (free tier)
 
 ### 1 — Supabase database
 
-1. Create a free account at [supabase.com](https://supabase.com) and create a new project.
-2. Copy the **Connection string** from **Project Settings → Database → Connection string → URI**.
-   It looks like `postgresql://postgres:[PASSWORD]@db.[ref].supabase.co:5432/postgres`.
-3. Run the schema migration once from your machine:
-   ```bash
-   psql "$DATABASE_URL" -f db/init.sql
-   ```
+1. Create a project at [supabase.com](https://supabase.com)
+2. Run the schema in **SQL Editor**:  paste the contents of [`db/init.sql`](db/init.sql)
+3. Copy the **Transaction pooler** connection string from **Connect → Transaction** (use the pooler URL — Render free tier requires IPv4)
 
-### 2 — Commit your ONNX model
+### 2 — Render API service
 
-The trained model artefacts must be available at deploy time.
-The easiest approach is to commit `ml/models/onnx/` to a private repo or upload them
-to a Railway volume / object storage and mount them.
+New Web Service → connect repo:
 
-Quick path — bake the model into the API image by placing `ml/models/onnx/` at
-`api/models/` before building (or adjust `ONNX_MODEL_DIR` to a path inside the container):
-
-```bash
-cp -r ml/models/onnx api/models
-```
-
-Then set `ONNX_MODEL_DIR=/app/models` in Railway's environment variables.
-
-### 3 — Deploy to Railway
-
-1. Install the Railway CLI: `npm install -g @railway/cli`
-2. Log in: `railway login`
-3. Create a new project: `railway init`
-4. Deploy the API service:
-   ```bash
-   cd api
-   railway up --service api
-   ```
-5. Set environment variables in the Railway dashboard (or via CLI):
-   ```
-   DATABASE_URL=postgresql://...      # from Supabase
-   ONNX_MODEL_DIR=/app/models
-   MODEL_VERSION=v1.0.0
-   LOG_PRETTY=false
-   PORT=3000
-   ```
-6. Deploy the frontend service:
-   ```bash
-   cd frontend
-   # Set VITE_API_URL to your Railway API public URL, e.g.:
-   railway up --service frontend
-   ```
-   Add environment variable:
-   ```
-   VITE_API_URL=https://api-xxxx.railway.app
-   ```
-
-Railway auto-detects Dockerfiles and builds each service from the repo root.
-Point each service at its respective Dockerfile (`api/Dockerfile`, `frontend/Dockerfile`).
-
-### Railway environment variables summary
-
-| Variable | Service | Value |
-|---|---|---|
-| `DATABASE_URL` | api | Supabase connection string |
-| `ONNX_MODEL_DIR` | api | `/app/models` |
-| `MODEL_VERSION` | api | `v1.0.0` |
-| `LOG_PRETTY` | api | `false` |
-| `PORT` | api | `3000` |
-| `VITE_API_URL` | frontend | Railway API public URL |
-
----
-
-## Deployment — Google Cloud Run
-
-### Prerequisites
-
-1. GCP project with billing enabled
-2. APIs enabled: Cloud Run, Artifact Registry, Secret Manager
-3. Service account with roles: `Cloud Run Admin`, `Artifact Registry Writer`, `Secret Manager Accessor`
-4. Workload Identity Federation configured for the GitHub repo
-
-### One-time setup
-
-```bash
-PROJECT=your-project-id
-REGION=europe-west6
-
-# Artifact Registry repo
-gcloud artifacts repositories create swiss-referendum \
-  --repository-format=docker --location=$REGION
-
-# Cloud SQL (Postgres) or use Supabase free tier and set DATABASE_URL
-# If using Cloud SQL, create instance + database:
-gcloud sql instances create referendum-db \
-  --database-version=POSTGRES_16 --tier=db-f1-micro --region=$REGION
-gcloud sql databases create referendum_db --instance=referendum-db
-gcloud sql users set-password postgres --instance=referendum-db --password=YOUR_PW
-
-# Store DATABASE_URL as a Secret Manager secret
-echo -n "postgresql://postgres:YOUR_PW@/referendum_db?host=/cloudsql/..." | \
-  gcloud secrets create database-url --data-file=-
-```
-
-### GitHub Actions secrets required
-
-| Secret | Value |
+| Setting | Value |
 |---|---|
-| `GCP_PROJECT_ID` | Your GCP project ID |
-| `GCP_WIF_PROVIDER` | Workload Identity provider resource name |
-| `GCP_SA_EMAIL` | Service account email |
-| `DATABASE_URL` | Full PostgreSQL connection string |
+| Root directory | `api` |
+| Runtime | Docker |
+| Dockerfile path | `./Dockerfile` |
+| Docker build context | `.` |
 
-Push to `main` to trigger the deploy workflow (`.github/workflows/deploy.yml`).
+Environment variables:
 
-### Manual deploy (without CI)
+| Key | Value |
+|---|---|
+| `DATABASE_URL` | Supabase transaction pooler URI |
+| `ONNX_MODEL_DIR` | `/app/models` |
+| `MODEL_VERSION` | `v1.0.0` |
+| `PORT` | `3000` |
+| `LOG_PRETTY` | `false` |
 
-```bash
-gcloud auth configure-docker europe-west6-docker.pkg.dev
+### 3 — Render Frontend service
 
-# API
-docker build -t europe-west6-docker.pkg.dev/$PROJECT/swiss-referendum/api:latest ./api
-docker push europe-west6-docker.pkg.dev/$PROJECT/swiss-referendum/api:latest
-gcloud run deploy referendum-api \
-  --image=europe-west6-docker.pkg.dev/$PROJECT/swiss-referendum/api:latest \
-  --region=$REGION --allow-unauthenticated --port=3000 \
-  --set-env-vars="DATABASE_URL=...,MODEL_VERSION=v1.0.0,LOG_PRETTY=false"
+New Web Service → same repo:
 
-# Frontend
-docker build -t europe-west6-docker.pkg.dev/$PROJECT/swiss-referendum/frontend:latest ./frontend
-docker push europe-west6-docker.pkg.dev/$PROJECT/swiss-referendum/frontend:latest
-gcloud run deploy referendum-frontend \
-  --image=europe-west6-docker.pkg.dev/$PROJECT/swiss-referendum/frontend:latest \
-  --region=$REGION --allow-unauthenticated --port=80
+| Setting | Value |
+|---|---|
+| Root directory | `frontend` |
+| Runtime | Docker |
+| Dockerfile path | `./Dockerfile` |
+| Docker build context | `.` |
+
+Environment variables:
+
+| Key | Scope | Value |
+|---|---|---|
+| `VITE_API_BASE` | Build | `https://your-api.onrender.com` |
+| `API_UPSTREAM` | Runtime | `https://your-api.onrender.com` |
+
+### 4 — Verify
+
+```
+GET https://your-api.onrender.com/health
+→ { "status": "ok", "db": true, "model": true }
 ```
 
 ---
 
 ## CI — GitHub Actions
 
-Every pull request and push to `main`/`master` runs three jobs:
+Every pull request and push to `main`/`master` runs:
 
 | Job | What it does |
 |---|---|
@@ -304,17 +243,7 @@ Every pull request and push to `main`/`master` runs three jobs:
 | `frontend` | `tsc --noEmit` → `vite build` |
 | `ml` | `pip install` → `pytest -v` (dataset + model unit tests) |
 
-The deploy workflow (`.github/workflows/deploy.yml`) triggers on push to `main` and
-pushes Docker images to Artifact Registry then redeploys Cloud Run services.
-
 ---
-
-## Git workflow
-
-- Never commit directly to `main`
-- Feature branches: `feature/dataloader`, `feature/api`, etc.
-- Open a PR — CI runs tests on all three layers
-- Merge to `main` triggers the deploy workflow
 
 ## Model performance (baseline)
 
@@ -326,5 +255,5 @@ Trained on 4 258 samples, evaluated on 913 held-out samples.
 | RMSE | 12.06 pp |
 | R² | 0.063 |
 
-Low R² is expected for the baseline — the 584 features are sparse one-hot encoded and the model
-saw 200 epochs maximum. Tune via `ml/experiments/default.yaml`.
+Low R² is expected for the baseline — features are sparse one-hot encoded vectors and the model
+is a shallow MLP. Tune via `ml/experiments/default.yaml`.

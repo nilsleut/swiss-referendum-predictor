@@ -8,10 +8,10 @@ server {
         try_files $uri $uri/ /index.html;
     }
 
-    # Proxy API calls to the API container
     location /api/ {
-        proxy_pass http://api:3000/;
+        proxy_pass ${API_UPSTREAM}/;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
+        proxy_ssl_server_name on;
     }
 }
